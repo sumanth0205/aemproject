@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.aem.aftergap.core.schedulers.SchedulerJob">
+    <OCD id="com.aem.aftergap.core.schedulers.SchedulerJob" name="%com.aem.aftergap.core.schedulers.SchedulerJob.name" description="%com.aem.aftergap.core.schedulers.SchedulerJob.description">
+        <AD id="scheduler.expression" type="String" default="0\ 0\ 12\ 1/1\ *\ ?\ *" name="%com.aem.aftergap.core.schedulers.SchedulerJob.scheduler.expression.name" description="%com.aem.aftergap.core.schedulers.SchedulerJob.scheduler.expression.description"/>
+    </OCD>
+    <Designate pid="com.aem.aftergap.core.schedulers.SchedulerJob">
+        <Object ocdref="com.aem.aftergap.core.schedulers.SchedulerJob"/>
+    </Designate>
+</metatype:MetaData>

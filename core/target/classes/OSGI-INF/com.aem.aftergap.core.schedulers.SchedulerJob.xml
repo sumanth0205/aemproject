@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.aem.aftergap.core.schedulers.SchedulerJob">
+        <implementation class="com.aem.aftergap.core.schedulers.SchedulerJob"/>
+        <service servicefactory="false">
+            <provide interface="java.lang.Runnable"/>
+        </service>
+        <property name="scheduler.expression" value="0 0 12 1/1 * ? *"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.aem.aftergap.core.schedulers.SchedulerJob"/>
+        <reference name="osgiService" interface="com.aem.aftergap.core.OagiServiceInterface" cardinality="1..1" policy="static" bind="bindOsgiService" unbind="unbindOsgiService"/>
+    </scr:component>
+</components>
